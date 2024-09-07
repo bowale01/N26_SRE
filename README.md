@@ -6,6 +6,36 @@ This project implements a DNS-to-DNS-over-TLS proxy, allowing conventional DNS q
 
 This solution now supports multiple concurrent requests and handles both TCP and UDP DNS queries. 
 
+## Deliverables
+
+1. Source Code: dns_proxy.py
+   
+Python script implementing the DNS proxy, handling both TCP and UDP DNS queries, and forwarding them to a DNS-over-TLS server using the socket and ssl libraries.
+
+Uses asyncio for concurrency to handle multiple clients simultaneously.
+
+Key Features:
+
+TCP and UDP Handling: Listens on port 5353 for both TCP and UDP.
+
+DNS-over-TLS Forwarding: Connects securely to the DoT server (Cloudflare: 1.1.1.1).
+
+Concurrency: Handles multiple client requests concurrently using asyncio.
+
+Error Handling and Logging: Tracks errors and query processing.
+
+
+2. Dockerfile
+
+Dockerfile for building a containerized version of the DNS proxy.
+This ensures easy deployment in any containerized environment.
+Steps:
+
+Start from a lightweight Python image (python:3.9-slim).
+Copy the Python script (dns_proxy.py) into the container.
+Set the working directory and expose the necessary ports (e.g., 5353).
+Run the script when the container starts.
+
 ## Features
 - Supports **both TCP and UDP DNS queries**.
 - Forwards queries to **Cloudflare's DNS-over-TLS** server.
