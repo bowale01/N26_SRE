@@ -58,9 +58,7 @@ Improvements
 
 2. Load Balancing:- Add support for multiple DNS-over-TLS servers to distribute the load and provide redundancy.
 
-3. Logging and Monitoring:- Implement logging eg ELK Stack for debugging and monitoring purposes eg Prometheus with Grafana for visualization.Integration with observability 
-
-tools would provide insights into DNS query patterns and proxy health.
+3. Logging and Monitoring:- Implement logging eg ELK Stack for debugging and monitoring purposes eg Prometheus with Grafana for visualization.Integration with observability    tools would provide insights into DNS query patterns and proxy health.
 
 
 
