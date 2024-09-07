@@ -1,17 +1,18 @@
-# Base image
+# Use a lightweight Python base image
 FROM python:3.9-slim
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy the proxy script to the container
+# Copy the Python script into the container
 COPY dns_proxy.py /app
 
-# Install dependencies (if necessary)
-# RUN pip install ...
+# Install required Python libraries (e.g., asyncio, ssl)
+RUN pip install prometheus_client
 
-# Expose the port on which the DNS proxy listens
-EXPOSE 5353
+# Expose the port for both TCP and UDP DNS queries
+EXPOSE 5353/tcp
+EXPOSE 5353/udp
 
-# Command to run the DNS proxy
+# Run the DNS proxy when the container starts
 CMD ["python", "dns_proxy.py"]
