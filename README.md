@@ -26,7 +26,7 @@ This solution now supports multiple concurrent requests and handles both TCP and
 2. docker run -p 5353:5353 dns-proxy
 
 
-Incase if you want to run it locally 
+## Incase if you want to run it locally 
 
 1. Install Python 3.x and dependencies.
 2. Run the Python script:-
