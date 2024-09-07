@@ -34,7 +34,7 @@ Incase if you want to run it locally
 
 The proxy will listen on port 5353 for both TCP and UDP DNS queries.
 
-Security Concerns
+## Security Concerns
 
 Man-in-the-Middle Attacks: Since DNS-over-TLS encrypts DNS queries, a key concern would be ensuring that our proxy itself is secure. Encrypting traffic between the proxy and its clients or limiting access to internal networks only can help mitigate this.
 
@@ -44,7 +44,7 @@ Certificate Validation:- The proxy needs to validate the TLS certificates of the
 
 
 
-Integration in a Microservices Architecture
+## Integration in a Microservices Architecture
 
 The proxy can run as a microservice within a containerized architecture, providing DNS resolution capabilities to other services.
 
@@ -54,7 +54,7 @@ Services would point their DNS configuration to the proxy, ensuring that all DNS
 
 
 
-Improvements
+## Improvements
 
 1. Caching:- Implement DNS caching to reduce redundant queries and improve performance.
 
