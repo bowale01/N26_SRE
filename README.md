@@ -43,6 +43,7 @@ Resource Exhaustion (DDoS):- If the proxy is exposed to the public internet, it 
 Certificate Validation:- The proxy needs to validate the TLS certificates of the DoT server to avoid connecting to malicious servers.
 
 
+
 Integration in a Microservices Architecture
 
 The proxy can run as a microservice within a containerized architecture, providing DNS resolution capabilities to other services.
@@ -50,6 +51,7 @@ The proxy can run as a microservice within a containerized architecture, providi
 It can be deployed alongside services that require DNS-over-TLS to resolve domain names securely.
 
 Services would point their DNS configuration to the proxy, ensuring that all DNS traffic is encrypted.
+
 
 
 Improvements
