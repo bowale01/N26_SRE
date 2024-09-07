@@ -44,6 +44,10 @@ Services would point their DNS configuration to the proxy, ensuring that all DNS
 Improvements
 
 Caching: Implement DNS caching to reduce redundant queries and improve performance.
+
 Load Balancing: Add support for multiple DNS-over-TLS servers to distribute the load and provide redundancy.
-Logging and Monitoring: Implement logging eg ELK Stack for debugging and monitoring purposes eg Prometheus with Grafana for visualization.Integration with observability tools would provide insights into DNS query patterns and proxy health.
+
+Logging and Monitoring: Implement logging eg ELK Stack for debugging and monitoring purposes eg Prometheus with Grafana for visualization.Integration with observability 
+
+tools would provide insights into DNS query patterns and proxy health.
 
